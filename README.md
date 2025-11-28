@@ -10,9 +10,10 @@ An interactive **Streamlit web app** and **CLI assistant** that answers question
 ## 🎥 Project Demo
 
 <div align="center">
-  <video src="https://github.com/tmphan66/Pharmacy-AI-Assistant/raw/main/video/demo_video.mp4" controls="controls" muted="muted" style="max-width: 100%;">
-  </video>
-  <p><i>Watch the Pharmacy AI Assistant in action</i></p>
+  <a href="https://youtu.be/gl_JrtfQEz8">
+    <img src="https://img.youtube.com/vi/gl_JrtfQEz8/maxresdefault.jpg" alt="Watch the Pharmacy AI Assistant Demo" style="width:100%; max-width: 700px;">
+  </a>
+  <p><i>Click the image above to watch the demo</i></p>
 </div>
 
 ---
