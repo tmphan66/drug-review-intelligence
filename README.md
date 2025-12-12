@@ -1,4 +1,4 @@
-# COMP8460 Final Project — Drug AI Assistant (Streamlit + RAG + Tools)
+# Drug Review Intelligence — AI Assistant (Streamlit + RAG + Tools)
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit)
@@ -35,15 +35,71 @@ You can interact with the project via:
 
 ---
 
+## 🚀 Running the Project
+
+Follow these steps to set up the environment and launch the AI Assistant.
+
+### 1. Prerequisites
+Ensure you have **Python 3.10+** installed. You will also need **Ollama** running locally for the LLM.
+
+1.  Download and install [Ollama](https://ollama.com/).
+2.  Pull the specific model used in this project (as per `main.py`):
+    ```bash
+    ollama pull gemma3:4b
+    ```
+    *(Note: If you wish to use a different model, update the model name in `main.py`)*.
+
+### 2. Installation
+
+Clone the repository and install the dependencies:
+
+```bash
+# 1. Clone the repository
+git clone [[https://github.com/yourusername/drug-review-intelligence.git](https://github.com/yourusername/drug-review-intelligence.git)](https://github.com/tmphan66/drug-review-intelligence.git)
+cd drug-review-intelligence
+
+# 2. Create a virtual environment (Recommended)
+python -m venv venv
+
+# 3. Activate the environment
+# On Windows:
+.\venv\Scripts\activate
+# On Mac/Linux:
+source venv/bin/activate
+
+# 4. Install requirements
+pip install -r requirements.txt
+```
+### 3. Run the Project
+
+Run the project with Streamlit UI (Recommended)
+
+```bash
+streamlit run app.py
+```
+
+OR you can run the project in CLI Mode (For Debugging)
+
+```bash
+python main.py
+```
+
+---
+
 ## 📂 Project Structure
 
 ```text
 .
-├─ app.py                 # Streamlit web application (UI and glue)
-├─ main.py                # Backend logic, tools, RAG, OCR, and CLI
-├─ drugsComTest_raw.csv   # Dataset of drug reviews
-├─ video/                 # Demo assets
+├─ asset/
+│  └─ demo_video.mp4                # Demo assets
+├─ data   
+│  └─ drugs_cleaned.csv             # Dataset of drug reviews
+├─ video/                           
 │  └─ demo_video.mp4
-├─ chroma_db/             # ChromaDB collection (auto-created on first run)
-├─ requirements.txt       # Python dependencies
-└─ README.md              # This file
+├─ drugs_data_preprocessing.ipynb   # Backend logic, tools, RAG, OCR, and CLI
+├─ app.py                           # Streamlit web application (UI and glue)
+├─ main.py                          # Backend logic, tools, RAG, OCR, and CLI
+├─ chroma_db/                       # ChromaDB collection (auto-created on first run)
+├─ requirements.txt                 # Python dependencies
+└─ README.md                        # This file
+
