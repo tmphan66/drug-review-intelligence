@@ -7,7 +7,7 @@
 
 An interactive **Streamlit web app** and **CLI assistant** that answers questions about **drug reviews**.
 
-## 🎥 Project Demo
+## Project Demo
 
 <div align="center">
   <a href="https://youtu.be/gl_JrtfQEz8">
@@ -18,7 +18,7 @@ An interactive **Streamlit web app** and **CLI assistant** that answers question
 
 ---
 
-## 📖 Overview
+## Overview
 
 This project implements a local AI agent capable of answering questions based on medical data using:
 
@@ -35,7 +35,7 @@ You can interact with the project via:
 
 ---
 
-## 🚀 Running the Project
+## Running the Project
 
 Follow these steps to set up the environment and launch the AI Assistant.
 
@@ -86,7 +86,7 @@ python main.py
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 .
